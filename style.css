@@ -1,0 +1,87 @@
+body {
+    background: #000;
+    margin: 0;
+    height: 100vh;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.viewer {
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+}
+
+.image-container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#photo {
+    height: 100vh;     
+    width: auto;
+    object-fit: contain;
+}
+
+.author {
+    position: absolute;
+    bottom: 15px;
+    left: 15px;
+    color: white;
+    background: rgba(0,0,0,0.55);
+    padding: 6px 14px;
+    font-size: 18px;
+    border-radius: 4px;
+}
+
+
+.navBtn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: rgba(255,255,255,0.25);
+    color: white;
+    border: none;
+    font-size: 40px;
+    padding: 10px 18px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.navBtn:hover {
+    background: rgba(255,255,255,0.45);
+}
+
+#prevBtn {
+    left: 20px;
+}
+
+#nextBtn {
+    right: 20px;
+}
+
+.saveBtn {
+    font-family: 'Courier New', Courier, monospace;
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+    background: rgba(255,255,255,0.25);
+    color: white;
+    border: none;
+    font-size: 18px;
+    padding: 6px 14px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.saveBtn:hover {
+    background: rgba(255,255,255,0.45);
+}
